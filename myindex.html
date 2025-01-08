@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #a2af4c;
+            color: white;
+            padding: 15px 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea, form button {
+            width: 90%;
+            max-width: 300px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        form button {
+            background-color: #acaf4c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #572d8a;
+        }
+        .blog img, .blog iframe {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#navigation">Navigation</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="content" id="home">
+        <h2>Home</h2>
+        <p>Welcome to the home page of my website! This site is designed to showcase assignments, blogs, and provide an easy way to contact me. Explore the pages using the navigation bar above.</p>
+    </div>
+    <div class="content" id="navigation">
+        <h2>Navigation</h2>
+        <ul>
+            <li>Assignment 1A - <p> <a href="" target="_blank">click to open</a></p> </li>
+            <li>Assignment 1B - <p> <a href="" target="_blank">click to open</a></p> </li>
+            <li>Assignment 1C -  <p> <a href="" target="_blank">click to open</a></p></li>
+        </ul>
+    </div>
+    <div class="content" id="blog">
+        <h2>Blog</h2>
+        <div class="blog">
+            <p>Here are some photos and videos that I love:</p>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.V5zfZZhnF2epZ7FnbejUxwHaEo&pid=Api&P=0&h=180" alt="Sample Image">
+            <p>Check out this amazing video:</p>
+            <p>Visit this <a href="https://youtu.be/G1hKzCkywM8" target="_blank">interesting website</a> for more information.</p>
+        </div>
+    </div>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
